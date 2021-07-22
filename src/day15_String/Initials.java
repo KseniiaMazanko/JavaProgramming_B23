@@ -10,6 +10,7 @@ public class Initials {
         ask user to enter first name and
         last name
          */
+        int [] array = {1,2,3};
 
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter your first name:");

@@ -228,6 +228,7 @@ public class LunchTasks {
 
         int[] array ={1,1,1,1,1,2,2};
         int freq = frequency(array, 1);
+
         System.out.println(freq);
 
 

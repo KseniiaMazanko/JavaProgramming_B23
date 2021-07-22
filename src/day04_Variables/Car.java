@@ -1,5 +1,7 @@
 package day04_Variables;
 
+import java.util.Arrays;
+
 public class Car {
 
     public static void main(String[] args) {
@@ -18,6 +20,9 @@ public class Car {
 
         String word = "JavaScript";
         System.out.println("My favourite language is " + word);
+
+        int [] arr = new int[9];
+        System.out.println(arr[8]);
 
 
     }
