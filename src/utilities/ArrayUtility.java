@@ -349,7 +349,8 @@ public class ArrayUtility {
     }
 
 
-    //create method that accepts one double array and one double number and returns the frequency of the number
+    //create method that accepts one double array and one double number and
+    // returns the frequency of the number
 
     public static int frequency(int [] arr, int num){
 

@@ -110,7 +110,7 @@ public class ArrayListMethods {
         groceryList2.addAll(Arrays.asList("Soda", "Milk", "Wine", "Beer", "Eggs"));
         //check is Soda, Wine< Beer all of them are contained in groceryList
         
-        boolean r = groceryList2.containsAll(Arrays.asList("Soda", "Wine", "Beer", ));
+        boolean r = groceryList2.containsAll(Arrays.asList("Soda", "Wine", "Beer"));
 
         System.out.println("r = " + r);
         
