@@ -1,6 +1,7 @@
 package day38_CustomClass;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class CarpetObjects {
 
@@ -30,8 +31,8 @@ create a class called carpetObjects, and create an array of the carpet that cont
         carpet5.customOrder(9.2, 18.3, 170, false);
 
 
-        System.out.println(carpet1);
-        System.out.println(carpet2);
+        //System.out.println(carpet1);
+        //System.out.println(carpet2);
 
 
         System.out.println("_____________________________________________________");
@@ -44,6 +45,11 @@ create a class called carpetObjects, and create an array of the carpet that cont
         ArrayList<Carpet> persianCarpets = new ArrayList<>();
         ArrayList<Carpet> regularCarpets = new ArrayList<>();
 
+       /* persianCarpets.addAll(Arrays.asList(arrayOfCarpets));
+        persianCarpets.removeIf(carpet -> !carpet.isPersian);
+        System.out.println(persianCarpets);
+
+        */
 
         for (Carpet each : arrayOfCarpets) {
             if(each.isPersian){
@@ -53,6 +59,8 @@ create a class called carpetObjects, and create an array of the carpet that cont
                 regularCarpets.add(each);
             }
         }
+
+
         System.out.println(persianCarpets.size());
 
         for (Carpet eachPersian : persianCarpets) {
