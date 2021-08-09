@@ -1,5 +1,8 @@
 package day39_CustomClass_Static;
 
+import java.text.DecimalFormat;
+import java.time.format.DateTimeFormatter;
+
 public class Circle {
 
     /*
@@ -32,12 +35,17 @@ public class Circle {
         return diameter*PI;
     }
 
+
+
     public String toString() {
+
+        DecimalFormat df = new DecimalFormat("0.00");
+
         return "Circle{" +
                 "radius=" + radius +
                 ", diameter=" + diameter +
-                ", area = " + calculateArea() +
-                ", perimeter = " + calculatePerimeter() +
+                ", area = " + df.format(calculateArea()) +
+                ", perimeter = " + df.format(calculatePerimeter()) +
                 '}';
     }
 }
