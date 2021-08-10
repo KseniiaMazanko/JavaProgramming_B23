@@ -1,6 +1,14 @@
-package day41_CustomClass_Constructor;
+package day41_CustomClass_Constructor.ScrumTask;
 
-public class Tester {
+public class Developer {
+
+    /*create a class called Developer
+            Attributes:
+    name, employeeID, JobTitle, Salary
+    Actions:
+    setInfo(), coding(), unitTesting(), fixingBug(), toString()
+
+     */
 
     public String name;
     public char gender;
@@ -8,15 +16,15 @@ public class Tester {
     public int id;
     public double salary;
 
-    public static boolean isCybertekStudent;
     public static boolean isEmployed;
+    public static boolean hatesTesters;
 
-    static{
-        isCybertekStudent = true;
+    static {
         isEmployed = true;
+        hatesTesters = true;
     }
 
-    public Tester(String name, char gender, String jobTitle, int id, double salary) {
+    public Developer(String name, char gender, String jobTitle, int id, double salary) {
         this.name = name;
         this.gender = gender;
         this.jobTitle = jobTitle;
@@ -25,16 +33,12 @@ public class Tester {
     }
 
     public String toString() {
-        return "Tester{" +
+        return "Developer{" +
                 "name='" + name + '\'' +
                 ", gender=" + gender +
                 ", jobTitle='" + jobTitle + '\'' +
                 ", id=" + id +
                 ", salary=" + salary +
                 '}';
-    }
-
-    public void smokeTesting(){
-        System.out.println(name+ " is doing the smoke testing";
     }
 }
