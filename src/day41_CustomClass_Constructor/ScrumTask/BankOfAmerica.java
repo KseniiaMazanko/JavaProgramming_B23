@@ -50,8 +50,8 @@ public class BankOfAmerica {
 
         System.out.println("budget = " + budget);
 
-        ScrumTeam scrum2 = new ScrumTeam();
-        ScrumTeam scrum3 = new ScrumTeam();
+        ScrumTeam scrum2 = new ScrumTeam("Atila", "Abbos", "Vitalii");
+        ScrumTeam scrum3 = new ScrumTeam("Giovanni", "Kseniia", "David");
 
         ScrumTeam [] scrumTeams = {scrum1, scrum2, scrum3};
 
