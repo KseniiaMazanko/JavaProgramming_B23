@@ -1,4 +1,4 @@
-package day41_CustomClass_Constructor.ScrumTask;
+package day41_CustomClass_Constructor.scrumTask;
 
 public class BankOfAmerica {
 
@@ -33,8 +33,8 @@ public class BankOfAmerica {
         System.out.println(scrum1);
         scrum1.hireTester(tester1);
         scrum1.hireDeveloper(developer1);
-        scrum1.hireTesters(testers);
-        scrum1.hireDevelopers(developers);
+        scrum1.hireTester(testers);
+        scrum1.hireDeveloper(developers);
 
         System.out.println(scrum1);
 

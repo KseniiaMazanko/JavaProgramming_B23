@@ -1,4 +1,4 @@
-package day41_CustomClass_Constructor.ScrumTask;
+package day41_CustomClass_Constructor.scrumTask;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -21,11 +21,11 @@ public class ScrumTeam {
 
     public String toString() {
         return "ScrumTeam{" +
-                "PO='" + PO + '\'' +
-                ", BA='" + BA + '\'' +
-                ", SM='" + SM + '\'' +
-                ", number of testers=" + testers.size() +
-                ", number of developers=" + developers.size() +
+                "PO= '" + PO + '\'' +
+                ", BA= '" + BA + '\'' +
+                ", SM= '" + SM + '\'' +
+                ", number of testers= " + testers.size() +
+                ", number of developers= " + developers.size() +
                 '}';
     }
 
@@ -33,26 +33,25 @@ public class ScrumTeam {
         testers.add(tester);
     }
 
-    public void hireTesters (Tester [] testers){
-        this.testers.addAll(Arrays.asList(testers));
+    public void hireTester(Tester[] testers){
+        this.testers.addAll( Arrays.asList(testers) );
     }
 
-    public void fireTester (int id){
-        testers.removeIf(p -> p.id == id );
+    public void removeTester(int id){
+        testers.removeIf(tester -> tester.id == id );
     }
 
     public void hireDeveloper(Developer developer){
         developers.add(developer);
     }
 
-    public void hireDevelopers(Developer [] developer){
-        this.developers.addAll(Arrays.asList(developer));
+    public void hireDeveloper(Developer[] developers){
+        this.developers.addAll(Arrays.asList(developers));
     }
 
     public void removeDeveloper(int id){
         developers.removeIf( developer -> developer.id ==id );
     }
-
 
 
 }
