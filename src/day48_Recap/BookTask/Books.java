@@ -20,6 +20,7 @@ public class Books {
         private final String type;
         private final String author;
         private double price;
+        static int num3 = 400;
 
         public String getTitle(){
             return title;
